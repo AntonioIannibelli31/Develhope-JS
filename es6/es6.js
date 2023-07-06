@@ -1,3 +1,5 @@
+let helloName = "samir";
+
 function printName(helloName) {
   helloName = "Hello John";
   function inner() {
