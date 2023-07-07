@@ -13,9 +13,9 @@
 // const divide = function (a, b) {
 //   return a / b;
 // };
-const log = function (value) {
-  console.log(value);
-};
+// const log = function (value) {
+//   console.log(value);
+// };
 
 let sum = (a, b) => a + b;
 
