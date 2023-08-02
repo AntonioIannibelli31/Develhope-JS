@@ -1,24 +1,16 @@
-// const user = {
-//   id: 1,
-//   name: "John",
-//   age: 25,
-// };
-// let val1 = JSON.stringify(user);
+const user = {
+  id: 1,
+  name: "John",
+  age: 25,
+};
 
-// let val2 = JSON.parse(val1);
-// let val = localStorage.setItem(val2);
+function getObj() {
+  let val1 = JSON.stringify(user);
 
-// let final = localStorage.getItem(val);
-// localStorage.getItem(final);
+  let val = localStorage.setItem("val1", val1);
 
-function check() {
-  if (typeof window == "undefined") {
-    console.log("You are on the browser");
-
-    localStorage.setItem("myCat", "Tom");
-    const cat = localStorage.getItem("myCat");
-    console.log(cat);
-  } else console.log("error");
+  let final = localStorage.getItem("val1", val);
+  console.log(JSON.parse(final));
 }
 
-check();
+getObj();
